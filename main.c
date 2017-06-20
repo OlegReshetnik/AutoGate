@@ -1,5 +1,5 @@
 /*
-Проект Ворота.
+Automatic Gate rontroller
 Attiny13a, 9600000
 */
 
@@ -41,7 +41,7 @@ Attiny13a, 9600000
 #define OUT_PRESS ( ( BUTTON_OUT_PIN & ( 1 << BUTTON_OUT ) ) == 0 )
 #define IN_PRESS  ( ( BUTTON_IN_PIN & ( 1 << BUTTON_IN ) ) == 0 )
 
-const uint8_t pass[] PROGMEM = { G2, G1, G1, G2, G1, G1, 0 }; // Tsss! Password :-)
+const uint8_t pass[] PROGMEM = { G1, G1, G1, G2, G2, G2, G1, G1, G1, 0 }; // SOS, ( Tsss! Password :-)
 
 void do_open( void )
 {
